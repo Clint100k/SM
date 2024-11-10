@@ -92,5 +92,6 @@ body {
     overflow: hidden;
 }
 #sidebar.sub-menu.show{
-    height: 1fr;
+  /*  height: 1fr;  */
+    grid-template-rows: 1fr;
 }
