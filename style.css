@@ -84,14 +84,14 @@ body {
 #sidebar a:hover, #sidebar button:hover {
     background-color: #222532;
 }
-#sidebar .sub-menu {
+.sub-menu {
     display: grid;
 /*    height: 0; */
     grid-template-rows: 0fr;
     transition: 300ms ease-in-out;
     overflow: hidden;
 }
-#sidebar .sub-menu.show{
+.sub-menu.show{
   /*  height: 1fr;  */
     grid-template-rows: 1fr;
 }
