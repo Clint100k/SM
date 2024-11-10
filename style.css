@@ -84,9 +84,9 @@ body {
 #sidebar a:hover, #sidebar button:hover {
     background-color: #222532;
 }
-#sidebar drop {
+#sidebar.sub-menu {
     display: grid;
-    height: 0;
+/*    height: 0; */
     transition: 300ms ease-in-out;
     overflow: hidden;
 }
