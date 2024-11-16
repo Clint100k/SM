@@ -62,3 +62,21 @@ function hiDe(){
             break;
     }
 }
+
+var reS = window.matchMedia('(max-width: 800px)')
+rHide(reS);
+reS.addEventListener('change', rHide);
+function rHide(rNav) {
+    if (rNav.matches) {
+        document.getElementById("toGg").className = "drpRot";
+        document.getElementById("sidebar").className = "closE";
+
+        document.getElementById("loGs").className = "zer";
+        document.getElementById("sbm").className = "sub-menu";
+        document.getElementById("sbmTwo").className = "sub-menu";
+    } else {
+        document.getElementById("toGg").className = "nRot";
+        document.getElementById("sidebar").className = "opeN";
+        document.getElementById("loGs").className = "logo";
+    }
+}
