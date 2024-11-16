@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 root{
     --base-clr: #11121e;
     --line-clr: #41424a;
@@ -15,7 +15,7 @@ html{
     font-family: Poppins, 'Segoe UI', Tahoma, Verdana, Geneva;
     line-height: 1.5rem;
 }
-body {
+firstRow {
     min-height: 100vh;
     min-height: 100dvh;
     background-color: #11121e;
@@ -27,7 +27,7 @@ body {
 #sidebar {
     box-sizing: border-box;
     height: 100vh;
-    width: 250px;
+ /*   width: 250px;   */
     padding: 5px 1em;
     background-color: #11121e;
     border-right: 1px solid #41424a;
@@ -35,6 +35,10 @@ body {
     position: sticky;
     top: 0;
     align-self: start;
+
+    transition: 0.3s ease;
+    overflow: hidden;
+    flex-wrap: nowrap;
 }
 .dropdown-btn{
     width: 100%;
@@ -76,7 +80,7 @@ body {
 }
 #sidebar svg{
     flex-shrink: 0;
-    fill: #e5e6ef
+    fill: #e5e6ef;
 }
 #sidebar a span, #sidebar button span{
     flex-grow: 1;
@@ -86,12 +90,42 @@ body {
 }
 .sub-menu {
     display: grid;
-/*    height: 0; */
-    grid-template-rows: 0fr;
-    transition: 300ms ease-in-out;
+    height: 0px;
+    transition: 0.3s ease;
     overflow: hidden;
+
+    padding-left: 1rem;
 }
 .sub-menu.show{
-  /*  height: 1fr;  */
-    grid-template-rows: 1fr;
+    height: 160px;
+}
+.sub-menu.showTwo {
+    height: 260px;
+}
+.drpRot{
+    transform: rotate(180deg) translateY(20%);
+    transition: 0.3s ease;
+}
+.nRot {
+    transition: 0.3s ease;
+}
+#toggle-btn{
+    margin-left: auto;
+    padding: 1em;
+    border: none;
+    border-radius: 0.5em;
+    background: none;
+    cursor: pointer;
+}
+.opeN{
+    width: 250px;
+}
+#sidebar.closE{
+    padding: 5px;
+    width: 60px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+.zer{
+    display: none;
 }
