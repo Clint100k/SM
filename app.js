@@ -55,8 +55,8 @@ function hiDe(){
             document.getElementById("toGg").className = "drpRot";
             document.getElementById("sidebar").className = "closE";
 
-            document.getElementById("dropOneRot").className = "drpRot";
-            document.getElementById("dropTwoRot").className = "drpRot";
+            document.getElementById("dropOneRot").className = "nRot";
+            document.getElementById("dropTwoRot").className = "nRot";
 
             document.getElementById("loGs").className = "zer";
             document.getElementById("sbm").className = "sub-menu";
